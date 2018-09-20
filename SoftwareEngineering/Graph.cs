@@ -6,27 +6,63 @@ using System.Threading.Tasks;
 
 namespace SoftwareEngineering
 {
-    class Graph
+    class Graph : IGraph
     {
         private IList<GraphNode> Nodes = new List<GraphNode>();
 
 
+        /// <summary>
+        /// Determines if a graph contains a Node with given data
+        /// </summary>
+        /// <param name="Data"></param>
+        /// <returns></returns>
+        public bool Contains(string Data)
+        {
+            return Get(Data) != null;
+        }
+
+        /// <summary>
+        /// Removes the node with the given Data
+        /// </summary>
+        /// <param name="Data"></param>
+        public void Remove(string Data)
+        {
+            if (Contains(Data)) Nodes.Remove(Get(Data));
+        }
+
+        public void Add(string Data)
+        {
+            if (Contains(Data)) Remove(Data);
+            Nodes.Add(new GraphNode(Data));
+        }
+
+        public void AddConnection(string DataOne, string DataTwo)
+        {
+            throw new NotImplementedException();
+        }
+
+        private GraphNode Get(string Data)
+        {
+            return Nodes.Where(n => n.Data.Equals(Data)).First();
+        }
 
         class GraphNode
         {
-            readonly string Data;
+            public readonly string Data;
 
             IList<GraphNode> Connections = new List<GraphNode>();
 
-            GraphNode(string Data)
+            public GraphNode(string Data)
             {
                 this.Data = Data;
             }
 
-            void AddConnection(GraphNode Node)
+            public void AddConnection(GraphNode Node)
             {
                 Connections.Add(Node);
             }
+
+
 
         }
 

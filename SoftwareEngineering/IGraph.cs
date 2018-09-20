@@ -10,12 +10,14 @@ namespace SoftwareEngineering
     /// Interface for a directed graph
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    interface IGraph<T>
+    interface IGraph
     {
-        bool Contains(T Data);
+        bool Contains(string Data);
 
-        void Remove(T Data);
+        void Remove(string Data);
 
-        IList<T> GetConnections(T DataNode)
+        void Add(string Data);
+
+        void AddConnection(string DataOne, string DataTwo);
     }
 }
