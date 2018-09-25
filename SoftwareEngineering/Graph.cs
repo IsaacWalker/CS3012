@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace SoftwareEngineering
 {
-    class Graph : IGraph
+    public class Graph : IGraph
     {
         private IList<GraphNode> Nodes = new List<GraphNode>();
 
+        private int size;
 
+        public Graph()
+        {
+            size = 0;
+        }
         /// <summary>
         /// Determines if a graph contains a Node with given data
         /// </summary>
@@ -32,7 +37,11 @@ namespace SoftwareEngineering
 
         public void Add(string Data)
         {
-            if (Contains(Data)) Remove(Data);
+            if (Contains(Data))
+            {
+                Remove(Data);
+                size++;
+            }
             Nodes.Add(new GraphNode(Data));
         }
 
