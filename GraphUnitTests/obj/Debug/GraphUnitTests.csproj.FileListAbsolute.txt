@@ -1,0 +1,17 @@
+C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\obj\Debug\GraphUnitTests.csprojAssemblyReference.cache
+C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\obj\Debug\GraphUnitTests.csproj.CoreCompileInputs.cache
+C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\bin\Debug\GraphUnitTests.dll
+C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\bin\Debug\GraphUnitTests.pdb
+C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\bin\Debug\SoftwareEngineering.exe
+C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\bin\Debug\SoftwareEngineering.pdb
+C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\bin\Debug\SoftwareEngineering.exe.config
+C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\obj\Debug\GraphUnitTests.csproj.CopyComplete
+C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\obj\Debug\GraphUnitTests.dll
+C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\obj\Debug\GraphUnitTests.pdb

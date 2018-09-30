@@ -18,12 +18,26 @@ namespace GraphUnitTests
             G.Add("four");
             G.Add("five");
             G.Add("six");
+
+            Assert.AreEqual(G.GetSize(), 6);
         }
 
         [TestMethod]
         public void TestAddRemove()
         {
+            Graph G = new Graph();
 
+            G.Add("one");
+            G.Add("two");
+
+            Assert.IsTrue(G.Contains("one"));
+            Assert.IsTrue(G.Contains("two"));
+
+            G.Remove("one");
+            G.Remove("two");
+
+            Assert.IsTrue(!G.Contains("one"));
+            Assert.IsTrue(!G.Contains("two"));
         }
 
         [TestMethod]
@@ -35,8 +49,13 @@ namespace GraphUnitTests
             G.Add("two");
             G.Add("three");
             G.Add("four");
-            G.Add("five");
-            G.Add("six");
+
+            G.AddConnection("one", "two");
+            G.AddConnection("one", "three");
+            G.AddConnection("two", "four");
+            G.AddConnection("three", "four");
+
+            Assert.IsTrue(G.AreConnected("one", "two"));
         }
     }
 }

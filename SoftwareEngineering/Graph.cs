@@ -35,31 +35,68 @@ namespace SoftwareEngineering
             if (Contains(Data)) Nodes.Remove(Get(Data));
         }
 
+        /// <summary>
+        /// Adds a data node to the graph
+        /// </summary>
+        /// <param name="Data"></param>
         public void Add(string Data)
         {
             if (Contains(Data))
             {
                 Remove(Data);
+            }
+            else
+            {
                 size++;
             }
             Nodes.Add(new GraphNode(Data));
         }
 
+        /// <summary>
+        /// Adds a connection One->Two
+        /// </summary>
+        /// <param name="DataOne"></param>
+        /// <param name="DataTwo"></param>
         public void AddConnection(string DataOne, string DataTwo)
         {
-            throw new NotImplementedException();
+            if (!AreConnected(DataOne, DataTwo))
+            {
+                Get(DataOne).AddConnection(Get(DataTwo));
+            }
+        }
+
+        /// <summary>
+        /// Returns number of nodes in the graph
+        /// </summary>
+        /// <returns></returns>
+        public int GetSize()
+        {
+            return size;
+        }
+
+        /// <summary>
+        /// Returns whether A->B is true
+        /// </summary>
+        /// <param name="DataOne"></param>
+        /// <param name="DataTwo"></param>
+        /// <returns></returns>
+        public bool AreConnected(string DataOne, string DataTwo)
+        {
+            GraphNode A = Get(DataOne);
+            GraphNode B = Get(DataTwo);
+            return (A.Connections.Contains(B));
         }
 
         private GraphNode Get(string Data)
         {
-            return Nodes.Where(n => n.Data.Equals(Data)).First();
+            return Nodes.Where((n) => (n.Data == Data)).FirstOrDefault();
         }
 
         class GraphNode
         {
             public readonly string Data;
 
-            IList<GraphNode> Connections = new List<GraphNode>();
+            public IList<GraphNode> Connections = new List<GraphNode>();
 
             public GraphNode(string Data)
             {
@@ -70,10 +107,6 @@ namespace SoftwareEngineering
             {
                 Connections.Add(Node);
             }
-
-
-
         }
-
     }
 }
