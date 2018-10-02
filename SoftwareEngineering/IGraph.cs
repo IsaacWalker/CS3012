@@ -19,5 +19,7 @@ namespace SoftwareEngineering
         void Add(string Data);
 
         void AddConnection(string DataOne, string DataTwo);
+
+        string LCA(string NodeOne, string NodeTwo);
     }
 }

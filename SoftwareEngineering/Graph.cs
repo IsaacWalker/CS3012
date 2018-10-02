@@ -108,5 +108,30 @@ namespace SoftwareEngineering
                 Connections.Add(Node);
             }
         }
+
+
+        //LCA Implementation
+
+        /// <summary>
+        /// Finds the Lowest common ancestor of two nodes
+        /// </summary>
+        /// <param name="NodeOneString"></param>
+        /// <param name="NodeTwoString"></param>
+        /// <returns></returns>
+        public string LCA(string NodeOneString, string NodeTwoString)
+        {
+            GraphNode NodeOne = Get(NodeOneString);
+            GraphNode NodeTwo = Get(NodeTwoString);
+
+            if (NodeOne == null || NodeTwo == null) return null;
+
+            GraphNode ReturnNode = LCA(NodeOne, NodeTwo);
+            return (ReturnNode != null) ? ReturnNode.Data : null;
+        }
+
+        private GraphNode LCA(GraphNode NodeOne, GraphNode NodeTwo)
+        {
+            return null;
+        }
     }
 }
