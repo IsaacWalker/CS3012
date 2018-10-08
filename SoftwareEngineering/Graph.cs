@@ -131,7 +131,36 @@ namespace SoftwareEngineering
 
         private GraphNode LCA(GraphNode NodeOne, GraphNode NodeTwo)
         {
-            return null;
+
         }
+
+        private List<GraphNode> GetOrderedAncestors(GraphNode Input)
+        {
+            List<GraphNode> OrderedAncestors = new List<GraphNode>();
+
+            List<GraphNode> ImmediateAncestors = GetImmediateParents(Input);
+
+            while (ImmediateAncestors.Count != 0)
+            {
+                List<GraphNode> TempAncestors = new List<GraphNode>();
+
+                foreach (GraphNode Node in ImmediateAncestors)
+                {
+                    if (!OrderedAncestors.Contains(Node)) OrderedAncestors.Add(Node);
+                    TempAncestors.AddRange(GetImmediateParents(Node));
+                }
+
+                ImmediateAncestors = TempAncestors;
+            }
+
+            return OrderedAncestors;
+        }
+
+        private List<GraphNode> GetImmediateParents(GraphNode Input)
+        {
+            return Nodes.Where((N) => (N.Connections.Contains(Input))).ToList();
+        }
+
+
     }
 }
