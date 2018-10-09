@@ -7,9 +7,9 @@ C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\bin\Debug\
 C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\bin\Debug\GraphUnitTests.pdb
 C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
-C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\bin\Debug\SoftwareEngineering.exe
+C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\bin\Debug\SoftwareEngineering.dll
 C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\bin\Debug\SoftwareEngineering.pdb
-C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\bin\Debug\SoftwareEngineering.exe.config
+C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\bin\Debug\SoftwareEngineering.dll.config
 C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
 C:\Users\Isaac Walker\source\repos\SoftwareEngineering\GraphUnitTests\obj\Debug\GraphUnitTests.csproj.CopyComplete

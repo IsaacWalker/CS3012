@@ -1,6 +1,7 @@
+C:\Users\Isaac Walker\source\repos\SoftwareEngineering\SoftwareEngineering\obj\Debug\SoftwareEngineering.csprojAssemblyReference.cache
 C:\Users\Isaac Walker\source\repos\SoftwareEngineering\SoftwareEngineering\obj\Debug\SoftwareEngineering.csproj.CoreCompileInputs.cache
-C:\Users\Isaac Walker\source\repos\SoftwareEngineering\SoftwareEngineering\bin\Debug\SoftwareEngineering.exe.config
-C:\Users\Isaac Walker\source\repos\SoftwareEngineering\SoftwareEngineering\bin\Debug\SoftwareEngineering.exe
+C:\Users\Isaac Walker\source\repos\SoftwareEngineering\SoftwareEngineering\bin\Debug\SoftwareEngineering.dll.config
+C:\Users\Isaac Walker\source\repos\SoftwareEngineering\SoftwareEngineering\bin\Debug\SoftwareEngineering.dll
 C:\Users\Isaac Walker\source\repos\SoftwareEngineering\SoftwareEngineering\bin\Debug\SoftwareEngineering.pdb
-C:\Users\Isaac Walker\source\repos\SoftwareEngineering\SoftwareEngineering\obj\Debug\SoftwareEngineering.exe
+C:\Users\Isaac Walker\source\repos\SoftwareEngineering\SoftwareEngineering\obj\Debug\SoftwareEngineering.dll
 C:\Users\Isaac Walker\source\repos\SoftwareEngineering\SoftwareEngineering\obj\Debug\SoftwareEngineering.pdb

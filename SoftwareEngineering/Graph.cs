@@ -131,7 +131,16 @@ namespace SoftwareEngineering
 
         private GraphNode LCA(GraphNode NodeOne, GraphNode NodeTwo)
         {
+            List<GraphNode> NodeOneAncestors = GetOrderedAncestors(NodeOne);
 
+            List<GraphNode> NodeTwoAncestors = GetOrderedAncestors(NodeOne);
+
+            foreach (GraphNode CurrentNode in NodeOneAncestors)
+            {
+                if (NodeTwoAncestors.Contains(CurrentNode)) return CurrentNode;
+            }
+
+            return null;
         }
 
         private List<GraphNode> GetOrderedAncestors(GraphNode Input)
@@ -161,6 +170,10 @@ namespace SoftwareEngineering
             return Nodes.Where((N) => (N.Connections.Contains(Input))).ToList();
         }
 
+        public static void Main(String[] args)
+        {
+
+        }
 
     }
 }
