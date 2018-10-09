@@ -133,7 +133,7 @@ namespace SoftwareEngineering
         {
             List<GraphNode> NodeOneAncestors = GetOrderedAncestors(NodeOne);
 
-            List<GraphNode> NodeTwoAncestors = GetOrderedAncestors(NodeOne);
+            List<GraphNode> NodeTwoAncestors = GetOrderedAncestors(NodeTwo);
 
             foreach (GraphNode CurrentNode in NodeOneAncestors)
             {
@@ -170,10 +170,7 @@ namespace SoftwareEngineering
             return Nodes.Where((N) => (N.Connections.Contains(Input))).ToList();
         }
 
-        public static void Main(String[] args)
-        {
 
-        }
 
     }
 }

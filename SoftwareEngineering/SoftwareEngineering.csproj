@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{CFBC08CB-B456-4FF0-BABE-C02503D7C70E}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>SoftwareEngineering</RootNamespace>
     <AssemblyName>SoftwareEngineering</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
