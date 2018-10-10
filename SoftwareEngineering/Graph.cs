@@ -170,6 +170,10 @@ namespace SoftwareEngineering
             return Nodes.Where((N) => (N.Connections.Contains(Input))).ToList();
         }
 
+        public static void Main(String[] args)
+        {
+
+        }
 
 
     }

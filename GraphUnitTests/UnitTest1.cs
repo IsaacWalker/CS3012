@@ -106,5 +106,34 @@ namespace GraphUnitTests
             Assert.IsTrue(G.LCA("eight", "seven").Equals("four"));
 
         }
+
+        [TestMethod]
+        public void TestFailLCA()
+        {
+            Graph G = new Graph();
+
+            G.Add("one");
+            G.Add("two");
+            G.Add("three");
+            G.Add("four");
+            G.Add("five");
+            G.Add("six");
+            G.Add("seven");
+            G.Add("eight");
+            G.Add("nine");
+
+            G.AddConnection("one", "two");            //     one
+            G.AddConnection("one", "three");          //     / \
+            G.AddConnection("two", "five");          //   two  three
+            G.AddConnection("three", "four");        //    |      \
+            G.AddConnection("five", "six");          //   five     four
+            G.AddConnection("four", "six");          //     \     /  \
+            G.AddConnection("four", "seven");       //        six      seven
+            G.AddConnection("six", "eight");        //        |   
+                                                    //       eight          nine
+
+            Assert.IsTrue(G.LCA("eight", "nine") == null);
+
+        }
     }
 }
