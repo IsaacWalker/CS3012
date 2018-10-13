@@ -6,12 +6,18 @@ using System.Threading.Tasks;
 
 namespace SoftwareEngineering
 {
+    /// <summary>
+    /// ADT that Represents a DAG
+    /// </summary>
     public class Graph : IGraph
     {
         private IList<GraphNode> Nodes = new List<GraphNode>();
 
         private int size;
 
+        /// <summary>
+        /// Creates an unweighted Directed acyclic graph
+        /// </summary>
         public Graph()
         {
             size = 0;
@@ -92,6 +98,9 @@ namespace SoftwareEngineering
             return Nodes.Where((n) => (n.Data == Data)).FirstOrDefault();
         }
 
+        /// <summary>
+        /// Represents a Node of a graph, which has data and connections to other ndoes
+        /// </summary>
         class GraphNode
         {
             public readonly string Data;

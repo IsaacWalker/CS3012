@@ -7,6 +7,7 @@ namespace GraphUnitTests
     [TestClass]
     public class UnitTest1
     {
+        //Ensures that the size method on the graph works as expected
         [TestMethod]
         public void TestSize()
         {
@@ -22,6 +23,8 @@ namespace GraphUnitTests
             Assert.AreEqual(G.GetSize(), 6);
         }
 
+        ///Tests that the functionality for adding and removing nodes from the graph 
+        /// work as expected
         [TestMethod]
         public void TestAddRemove()
         {
@@ -40,6 +43,9 @@ namespace GraphUnitTests
             Assert.IsTrue(!G.Contains("two"));
         }
 
+        /// <summary>
+        /// Ensures that Connecting two nodes registers in the graph
+        /// </summary>
         [TestMethod]
         public void TestAreConnected()
         {
@@ -58,6 +64,9 @@ namespace GraphUnitTests
             Assert.IsTrue(G.AreConnected("one", "two"));
         }
 
+        /// <summary>
+        /// Tests the Lowest common ancestor implementation on a Basic graph
+        /// </summary>
         [TestMethod]
         public void TestBasicLCA()
         {
@@ -79,6 +88,9 @@ namespace GraphUnitTests
 
         }
 
+        /// <summary>
+        /// Tests the LCA on a more complicated graph
+        /// </summary>
         [TestMethod]
         public void TestComplexLCA()
         {
@@ -107,6 +119,10 @@ namespace GraphUnitTests
 
         }
 
+        /// <summary>
+        /// Ensures that the test swill fail on a graph without 
+        /// a common ancestor. LCA returns null when theres is no common ancestor
+        /// </summary>
         [TestMethod]
         public void TestFailLCA()
         {
